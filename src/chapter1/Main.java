@@ -1,7 +1,10 @@
-package chapter0;
+package chapter1;
+
+import chapter1.dataType.StringAndChar;
+
 public class Main {
     // 輸入jsvm可快速生成public static void main(String[] args){}
-    public static void main(String[] args) {
+    public static void main(StringAndChar[] args) {
         // 輸入sout可快速生成System.out.println()
         System.out.println("Hello World");
 
