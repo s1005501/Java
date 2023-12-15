@@ -8,6 +8,7 @@ public class Double {
         final double PI = 3.14;
         final double TEST_VARIABLE = 0.5555;
 
+        // final
         // PI前已經加上final就不可再做更改了，會噴錯
         // PI = 666;
 

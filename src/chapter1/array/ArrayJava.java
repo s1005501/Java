@@ -34,5 +34,10 @@ public class ArrayJava {
         // Array的大小不能修改（如果要向Array中添加或刪減總元素數量，則必須創建一個新數組）
         friends[4] = "Wilson";
 
+        // Array裡可以再放Array進去，大概格式如下，要幾層Array就要加上對應得[]
+        // 型態[][] 變數名稱 = new 型態[第一層Array能放的數量][第二層Array能放的數量]
+        int[][] my2DArray = new int[4][3];
+        my2DArray[2][1] = 10;
+
     }
 }
