@@ -18,7 +18,7 @@ public class ArrayJava {
         // 型態[] 變數名稱 = new 型態[陣列長度]
         String[] newFriends = new String[5];
 
-        // 把資料塞進空陣列、更新陣列的值的方式是透過[]和索引來附值，找不到的空值則會以null顯示
+        // 把資料塞進空陣列、更新陣列的值的方式是透過[]和索引來賦值，找不到的空值則會以null顯示
         // 變數[索引值] = 要塞進陣列的資料
         newFriends[0] = "凱文";
         System.out.println(newFriends[0]); // 凱文
