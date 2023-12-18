@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        <script>
-            const test = (() => {
-                for (let i = 0; i < 10; i++) {
-                    console.log(i);
-                    // js裡有沒有跟java的continue類似的功能
-                    if (i === 5) {
-                        // return;
-                        // break;
-                    }
-                }
-            })();
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const test = (() => {
+      //     for (let i = 0; i < 10; i++) {
+      //       console.log(i);
+      //       // js裡有沒有跟java的continue類似的功能
+      //       if (i === 5) {
+      //         // return;
+      //         // break;
+      //       }
+      //     }
+      //   })();
 
-            // 有空回去把js的猜遊戲寫看看，應該不難
-            const guess = (num) => {
-                // 變數；猜測的最大最小邊界、正確答案(random()出來的)、user猜的(抓input value)
-                // while迴圈{
-                // if(){} //答對
-                // if(){} // 比正確高
-                // if(){} // 比正確低
-                // }
-            };
-            console.log(undefined ? 0 : 11111111111111111);
-        </script>
-    </body>
+      // 有空回去把js的猜遊戲寫看看，應該不難
+      const guess = (num) => {
+        // 變數；猜測的最大最小邊界、正確答案(random()出來的)、user猜的(抓input value)
+        // while迴圈{
+        // if(){} //答對
+        // if(){} // 比正確高
+        // if(){} // 比正確低
+        // }
+      };
+      let a = 10;
+      const add = (x) => {
+        x = 20;
+      };
+      add(a);
+      console.log(a);
+    </script>
+  </body>
 </html>

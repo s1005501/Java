@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>按值傳遞(copy by value)</title>
+  </head>
+  <body>
+    <script>
+      // js按值傳遞時建立該值的副本的概念就是copy by value
+      let a = 10;
+      const show = (x) => {
+        x = 20;
+      };
+      show(a);
+      console.log(a); // 10
+    </script>
+  </body>
+</html>
