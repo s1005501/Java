@@ -1,7 +1,8 @@
 package chapter1;
 
 public class Main {
-    // 輸入jsvm可快速生成public static void main(String[] args){}
+    // 輸入psvm可快速生成public static void main(String[] args){}
+    // public static void main(String[] args) {}會被Java自動執行，且是第一個執行的method
     public static void main(String[] args) {
         // 輸入sout可快速生成System.out.println()
         // println()表示要印出來的資料要整行做顯示
