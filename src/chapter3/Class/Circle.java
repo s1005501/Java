@@ -5,11 +5,11 @@ package chapter3.Class;
 // Constructor必須要跟Class同名
 // Constructor用於製作新物件
 // Constructor沒有return值
-// 所有Class都默認有Constructor，如果我們不寫Constructor，Java會為我們自動創建一個，但我們就無法為物件屬性設置初始值
+//  
 public class Circle {
 
     // 設置物件的屬性，寫在Constructor上面
-    // 加上public表示在這支java裡的所有地方都可以拿到radius這個變數的值
+    // 加上public表示在所有地方都可以拿到radius這個變數的值
     public double radius;
 
     // 如果改成private的話，在ClassJava就沒辦法拿到radius的值了，因為radius變成是私有的
@@ -23,4 +23,5 @@ public class Circle {
 
         radius = newRadius;
     }
+
 }
