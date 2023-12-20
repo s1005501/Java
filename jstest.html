@@ -6,6 +6,10 @@
     <title>Document</title>
   </head>
   <body>
+    <form id="form" enctype="multipart/form-data" name="form1">
+      <input type="text" name="name" />
+      <button>Submit</button>
+    </form>
     <script>
       //   const test = (() => {
       //     for (let i = 0; i < 10; i++) {
@@ -28,61 +32,19 @@
         // }
       };
 
-      // copy by value
-      // let a = 10;
-      // const add = (x) => {
-      //   x = 20;
-      // };
-      // add(a);
-      // console.log(a);
+      const formdata = document.querySelector("#form");
+      const fd = new FormData(document.form1);
+      // formData.get("name"); // 取得目前 input 的值
+      // formData.get("file"); // 取得目前的檔案
 
-
-
-      
-      // php 2022-12-01 11-08 頭~10:30
-      // ES6 透過class取代function，class後面接物件名稱，名稱開頭務必大寫
-      // 大概知道怎麼寫就好，React現在基本上已經用function component取代class component了，可能網路爬文、以後維護會遇到
-      class Person {
-        // 建構子(建構函式)，只能用constructor這個關鍵字
-        // ES6以後的預設值給法
-        constructor(name = "Hank", age = 18) {
-          this.name = name;
-          this.age = age;
+      formdata.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // console.log(fd.get("name"));
+        console.log(fd.name);
+        for (let [key, value] of fd.entries()) {
+          console.log([key, value]);
         }
-
-        // 屬性定義寫再constructor外也可以，但不要這樣使用
-        gender = "male";
-
-        // 可以直接定義function，不用再透過this.getInfo寫進constructor
-        getInfo() {
-          return `${this.name}, ${this.age}, ${this.gender}`;
-        }
-
-        // 覆蓋掉原本的內建API toString()
-        toString() {
-          const { name, age, gender } = this; // 解構
-          return JSON.stringify({ name, age, gender });
-        }
-      }
-
-      const p1 = new Person("Kevin", 30);
-      console.log(p1);
-      console.log(p1 + "");
-      console.log(p1.name, p1.age);
-      console.log(p1.getInfo());
-
-      // 舊版的缺點在於直接呼叫該物件，會輸出undefined，但其子屬性會變成window底下的子屬性，而不是指向我們呼叫的物件
-      // console.log(Person());
-      console.log(window.name);
-      console.log(window.age);
-      console.log("---------------------");
-
-      const arr = [
-        { name: "david", age: 25 },
-        { name: "carl", age: 28 },
-        { name: "bill", age: 31 },
-      ];
-      console.log(JSON.stringify(arr));
+      });
     </script>
   </body>
 </html>

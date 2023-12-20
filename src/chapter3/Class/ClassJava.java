@@ -11,12 +11,18 @@ public class ClassJava {
         // 在java裡，我們可以建立其他java檔裡的物件
         // 這個Circle是同一層的資料夾裡的那支Circle.java檔
         // Constructor請參考Circle.java
-        // 這個new的動作就是會去執行Circle.java的Constructor，不用特別去呼叫 
-        Circle circle = new Circle(10);
-        System.out.println(circle.radius);
+        // 這個new的動作就是會去執行Circle.java的Constructor，不用特別去呼叫
+        Circle c1 = new Circle(10);
+        System.out.println(c1.radius);
+        System.out.println(c1.getArea());
+        c1.radius = 20;
+        System.out.println(c1.radius);
 
-        Circle circle2 = new Circle(5);
-        System.out.println(circle2.radius);
+        Circle c2 = new Circle(5);
+        System.out.println(c2.radius);
 
+        Circle c3 = new Circle();
+        // System.out.println(c3.radius);
+        System.out.println(c3.getArea());
     }
 }

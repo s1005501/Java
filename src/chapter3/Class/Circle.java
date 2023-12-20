@@ -16,12 +16,22 @@ public class Circle {
     // 絕大多數的情況下，都是設成private
     // private double radius;
 
+    // 同一個檔案裡可以有多個同名的constrructor(方法過載method overloading)
+    // 這樣的寫法是給預設值的概念
+    public Circle() {
+        radius = 1;
+    }
+
     // 這個就是Circle Class的Constructor
     // 注意裡面不能加任何的return type
     public Circle(double newRadius) {
-        System.out.println("Hello from circle.java");
+        // System.out.println("Hello from circle.java");
 
         radius = newRadius;
     }
 
+    // 物件的行為
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
 }
