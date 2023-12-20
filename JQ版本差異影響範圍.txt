@@ -1,0 +1,9 @@
+1.0版本有使用bind()、delegate()、unbind() 和 undelegate()，但到3.0已被棄用
+
+3.0移除load()、unload() 和 error() 方法
+
+https://coolmandiary.blogspot.com/2021/08/jquery36.html
+
+https://www.finclip.com/news/f/410.html
+
+https://paladinprogram.blogspot.com/2019/05/jquery.html

@@ -18,7 +18,7 @@
       const upload = document.querySelector("#upload");
       const preview = document.querySelector("img");
 
-      const formdata = document.querySelector("#form");
+      const usrForm = document.querySelector("#form");
       const fd = new FormData(document.form1);
 
       const name = document.querySelector("#name");
@@ -36,7 +36,7 @@
         reader.addEventListener("load", function () {
           preview.src = reader.result;
 
-          // 非同步讀取完後將圖片資料存進Formdata裡
+          // 非同步讀取完後將圖片資料存進FormData裡
           fd.set("img", reader.result);
         });
       });
@@ -46,7 +46,7 @@
         // console.log(e.target.value);
       });
 
-      formdata.addEventListener("submit", (e) => {
+      usrForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
         console.log(fd.getAll("name"));
