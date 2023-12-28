@@ -13,7 +13,7 @@ public class This {
         this.radius = radius;
     }
 
-public double getArea
+    // public double getArea
 
     public static void main(String[] args) {
         This t = new This(10);
