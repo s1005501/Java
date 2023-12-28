@@ -9,6 +9,7 @@ public class Three {
         // The local variable max may not have been initializedJava
         int max = 0;
 
+        // 透過迴圈把陣列裡的值倆倆拿去比較，如果後面比前面大，則帶入max變數
         for (int i = 0; i < arr.length - 1; i++) {
             // api寫法
             // max = Math.max(arr[i], arr[i + 1]);

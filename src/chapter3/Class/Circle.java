@@ -16,7 +16,7 @@ public class Circle {
     // 絕大多數的情況下，都是設成private
     // private double radius;
 
-    // 同一個檔案裡可以有多個同名的constrructor(方法過載method overloading)
+    // 同一個檔案裡可以有多個同名的constructor(方法過載method overloading)
     // 這樣的寫法是給預設值的概念
     public Circle() {
         radius = 1;
