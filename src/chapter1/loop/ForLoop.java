@@ -19,7 +19,7 @@ public class ForLoop {
         // }
 
         // 常用的for迴圈寫法
-        // 印出陣列的值(js的for/in迴圈)
+        // 印出陣列的值(js的for/of迴圈)
         // for(型態 變數名稱 : 陣列變數){
         // 執行內容
         // }

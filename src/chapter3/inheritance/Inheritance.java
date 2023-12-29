@@ -10,7 +10,7 @@ package chapter3.inheritance;
 public class Inheritance {
     public static void main(String[] args) {
         Teacher teacher1 = new Teacher("Mike", 30, "台北", "電腦科學");
-        Teacher teacher2 = new Teacher("Eric", 31, "桃園", "社會科學");
+        Teacher teacher2 = new Teacher("Eric", 36, "桃園", "社會科學");
         teacher1.sleep();
         teacher2.teach();
 
@@ -19,8 +19,11 @@ public class Inheritance {
         student1.walk();
         student2.learn();
 
+        // 預設值
         People p = new People();
         System.out.println(p.address);
 
+        // equal override
+        System.out.println(student1.equals(teacher2)); // true
     }
 }

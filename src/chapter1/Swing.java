@@ -71,7 +71,7 @@ public class Swing extends JPanel {
         window.setSize(300, 300);
         // 要有setContentPane才能將上面paintComponent裡畫的東西輸出，()內要填得是你的class名稱
         window.setContentPane(new Swing());
-        // 設定視窗能顯示
+        // 設定視窗能顯示，注意，這個要放在最下面
         window.setVisible(true);
     }
 }

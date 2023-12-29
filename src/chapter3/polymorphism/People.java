@@ -1,4 +1,4 @@
-package chapter3.inheritance;
+package chapter3.polymorphism;
 
 // 把Teacher、Student共有的屬性、method放到People裡作為其父類，Teacher、Student再去繼承他的資料
 // 父類變數的訪問修飾符通常會是protected

@@ -1,4 +1,4 @@
-package chapter3.inheritance;
+package chapter3.polymorphism;
 
 public class Student extends People {
 
@@ -15,8 +15,7 @@ public class Student extends People {
     }
 
     // Method Override
-    // Method Override是指，我們可以在child class覆寫從parent
-    // class繼承過來的method。使用時在要改寫的method的上一行加上@Override
+    // Method Override是指，我們可以在child class覆寫從parent class繼承過來的method，但其實它的功能比較像是註記，方便我們辨識，只要子類的method跟父類相同，則加不加@Override都會發生覆寫
     @Override
     public void walk() {
         System.out.println("A student is walking like a boss");
