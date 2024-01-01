@@ -15,6 +15,7 @@ public class Polymorphism {
 
         // 如果實例化時不使用父類而是使用子類時也可以裝進父類宣告的變數(因為父類可以承接所有的子類)
         Teacher t2 = new Teacher("Eric", 36, "桃園", "社會科學");
+     
 
         // 多型在陣列(Array、ArrayList)的實例
         // Array
@@ -23,7 +24,6 @@ public class Polymorphism {
         p1[1] = s2;
         p1[2] = t1;
         p1[3] = t2;
-
         for (int i = 0; i < 4; i++) {
             System.out.println(p1[i].name); // Kevin Hank Mike Eric
         }
