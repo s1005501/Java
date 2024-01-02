@@ -1,4 +1,4 @@
-package littleSkill;
+package 內建Api;
 
 public class StringSplitAndSubstring {
 

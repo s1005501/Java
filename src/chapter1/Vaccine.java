@@ -7,17 +7,22 @@ public class Vaccine {
         // JOptionPane是java swing裡的一個library，它能快速生成簡單的UI介面
         // showInputDialog產生的介面跟JS的prompt差不多，()內的參數是要顯示給使用者看的內容
         // 使用者輸入的資料會被JOptionPane回傳，因此用變數去承接其值
+
         // showInputDialog()大概格式
         // String 變數名稱 = JOptionPane.showInputDialog("使用者看的內容");
+
         String vaccine = JOptionPane.showInputDialog("請輸入疫苗名稱(選項包含AZ, BNT, Moderna, Janssen):");
 
         // 先將資料轉成小寫
         vaccine = vaccine.toLowerCase();
 
         if (vaccine.equals("az")) {
-            // showMessageDialog產生的介面跟JS的alert差不多，不需要用變數承接，直接透過JOptionPane呼叫即可，()內需要兩個參數，第一個請固定給null，第二個才是要顯示給使用者看的內容
+            // sshowMessageDialog()產生的介面跟JS的alert差不多，不需要用變數承接，直接透過JOptionPane呼叫即可，()內需要兩個參數，第一個給null則彈窗會顯示在螢幕正中央，給this則會顯示在parent
+            // Class的中央(如果有用JPanel的話就是會顯示在畫板中央)，第二個才是要顯示給使用者看的內容
+
             // showMessageDialog()大概格式
-            // JOptionPane.showMessageDialog(null, "使用者看的內容");
+            // JOptionPane.showMessageDialog(null or this, "使用者看的內容");
+
             JOptionPane.showMessageDialog(null, "AZ\n研發國：英國、瑞典\n疫苗類型：腸病毒疫苗\n劑量：兩劑\n保護力：81%");
         } else if (vaccine.equals("bnt")) {
             JOptionPane.showMessageDialog(null, "BNT\n研發國：德國、美國\n疫苗類型：mRNA疫苗\n劑量：兩劑\n保護力：95%");
