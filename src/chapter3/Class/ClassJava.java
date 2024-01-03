@@ -24,5 +24,9 @@ public class ClassJava {
         Circle c3 = new Circle();
         // System.out.println(c3.radius);
         System.out.println(c3.getArea());
+
+        // constructor也可以直接執行，透過new constructor()
+        new Circle();
+
     }
 }
