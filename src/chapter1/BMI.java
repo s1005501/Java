@@ -11,7 +11,7 @@ public class BMI {
     public static void main(String[] args) {
         // BMI 計算公式 (kg / m^2)
 
-        // Scanner的功能是可以讓使用者可以在terminal裡輸入資料(System.in)
+        // Scanner的功能是類似掃描器，()內給System.in當參數的話可以讓使用者可以在terminal裡輸入資料
         // 這裡如果沒有輸入資料的話，code就會停在這不動，當然也可以手動將程式終止下來，run
         // java後可以看到VSC上面的工具列裡有紅色方塊的符號，點擊就可以將java停下(快捷是Shift + F5) ，綠色的則是重整(Ctrl + Shift
         // + F5)
