@@ -51,10 +51,10 @@ public class Swing extends JPanel {
         // g.fillOval(50, 50, 100, 100);
 
         // 繪製圖片
-        // 首先要先將圖檔放到跟src資料夾同一層的位置
+        // 首先要先將圖檔放到跟src資料夾外層的位置
         // 再建立一個ImageIcon物件並用ImageIcon宣告的自定義變數承接
         // new ImageIcon()的()內放的就是你的圖檔的名稱(名稱用雙引號(")包起來)
-        ImageIcon img = new ImageIcon("main.jpg");
+        ImageIcon img = new ImageIcon("./asset/main.jpg");
 
         // 其次用ImageIcon宣告的自定義變數呼叫paintIcon()
         // paintIcon()功能是繪出圖片，需要四個參數，第一個參數請給null，第兩個參數是java.awt.Graphics定義的變數，後兩個的參數是圖片的起始點的x、y軸
