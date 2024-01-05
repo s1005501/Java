@@ -4,7 +4,6 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class BMI {
-
     // 限制資料的值只能到小數點後兩位
     private static final DecimalFormat DF = new DecimalFormat("0.00");
 
@@ -29,7 +28,7 @@ public class BMI {
         double bmi = Double.parseDouble(DF.format(weight / (height * height)));
         System.out.println("您的BMI數值為" + bmi);
 
-        if (bmi < 18.5) {   
+        if (bmi < 18.5) {
             System.out.println("您屬於過輕類型");
         } else if (bmi < 24) {
             System.out.println("您屬於正常類型");
@@ -38,6 +37,6 @@ public class BMI {
         } else {
             System.out.println("您屬於過胖類型");
         }
-
+        scanner.close();
     }
 }
