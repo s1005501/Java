@@ -2,7 +2,12 @@ package chapter3.inheritance;
 
 // 實際的繼承要透過extends這個關鍵字以及super()這個method
 // 首先在子類的class的名稱後面加上extends 父類的class名稱
-// public class 子類 extends 父類{}
+// public class 子類名稱 extends 父類名稱 {
+//     public 子類名稱(變數){
+//         super(變數)
+//     }
+// }
+
 public class Teacher extends People {
 
     private String subject;

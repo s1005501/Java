@@ -8,7 +8,14 @@ package chapter5.EnumJava;
 // 在compile time發現錯誤，而不是在run time
 public class EnumJava {
     public static void main(String[] args) {
+        // 原本的寫法
+        // Person p1 = new Person("Kevin", 1);
+        // Person p2 = new Person("Dory", 2);
+
+        // enum的寫法
         Person p1 = new Person("Kevin", Nationality.TAIWANESE);
         Person p2 = new Person("Dory", Nationality.AMERICAN);
+
+        System.out.println(p2.getNationality());
     }
 }
