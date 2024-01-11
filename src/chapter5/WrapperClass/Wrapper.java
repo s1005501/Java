@@ -9,7 +9,7 @@ import java.util.ArrayList;
 // 可以用來儲存objects。ex:可以將integer存進ArrayList(ex:ArrayList<Integer>)
 // Java Synchronization當中的Multi-threading只能用objects來合作
 // Serialization只能用objects來合作
-public class Main {
+public class Wrapper {
     public static void main(String[] args) {
 
         // 基本上以下兩行的功能是一樣的，但建議不要用wrapper class的方式宣告變數，已被java棄用且效能較差
