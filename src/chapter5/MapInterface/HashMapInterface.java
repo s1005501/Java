@@ -22,6 +22,13 @@ public class HashMapInterface {
         incomeMap.put("Robert", 8000);
         System.out.println(incomeMap.get("Kevin"));
 
+        // 常用的API
+        // containsKeys()，用來檢查Map裡有沒有()內給的參數
+        System.out.println(incomeMap.containsKey("Kevin")); // true
+
+        // isEmpty()，用來檢查Map是不是空的
+        System.out.println(incomeMap.isEmpty()); // false
+
         System.out.println("-------------------------------------------");
         // 透過迴圈將Map裡的資料印出來的方式有兩種
         // 第一種，透過for迴圈，比較少用(因為實在太長)

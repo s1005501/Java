@@ -1,20 +1,25 @@
 package test;
 
+import java.util.HashMap;
+
 public class Main {
+
     public String str = "str";
 
-    public static class Test {
-        public String test = "test";
-
-        public void printStr() {
-            Main m = new Main();
-            System.out.println(m.str);
-        }
+    public Main() {
+        System.out.println("6666666");
     }
 
     public static void main(String[] args) {
-        Test t = new Test();
+        // Main m = new Main();
         // System.out.println(m.str);
-        t.printStr();
+
+        HashMap testHashMap = new HashMap<>();
+
+        int style3 = 0;
+
+        testHashMap.put(style3, "test");
+
+        System.out.println(testHashMap.containsKey(0));
     }
 }
