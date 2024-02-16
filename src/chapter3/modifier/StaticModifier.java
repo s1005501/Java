@@ -7,7 +7,7 @@ public class StaticModifier {
 
     public static void main(String[] args) {
         System.out.println(I); // 1
-        System.out.println(j); // 沒加static直接print會噴
+        System.out.println(j); // 沒加static直接print會噴錯
 
     }
 }

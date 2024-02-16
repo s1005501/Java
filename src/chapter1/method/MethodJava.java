@@ -19,9 +19,9 @@ package chapter1.method;
 // 定義methods時使用formal parameter，而執行methods時使用actual parameter
 
 public class MethodJava {
-    // method使用方是有兩種，一種是透過java檔的同名物件來呼叫，一種是在定義method時加上static
+    // method使用方是有兩種，一種是透過實例化的方式來呼叫，一種是在定義method時加上static
 
-    // 透過java檔的同名物件來呼叫
+    // 透過實例化(new)的方式呼叫
     // 定義一個功能是印出Hello字樣的method(sayHello)
     public void sayHello() {
         System.out.println("Hello!");
@@ -42,10 +42,10 @@ public class MethodJava {
 
     public static void main(String[] args) {
 
-        // 透過java檔的同名物件來呼叫
-        // 建立一個跟本支java檔同名的物件
+        // 透過實例化的方式呼叫
+        // 實例化
         MethodJava m = new MethodJava();
-        // 就可以透過同名物件來呼叫sayHello()
+        // 就可以透過實例化出來的物件來呼叫sayHello()
         m.sayHello();
 
         // 定義method時加上static
