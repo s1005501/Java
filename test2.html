@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>test2</title>
     <style>
       body {
         background-color: darksalmon;
       }
 
       .draggable {
-        background-image: url("http://source.unsplash.com/random/150x150");
+        background-image: url("./asset/main.jpg");
         position: relative;
         height: 150px;
         width: 150px;
@@ -60,10 +60,11 @@
       draggable.addEventListener("dragend", dragEnd);
 
       function dragStart() {
+        console.log("dragStart");
         this.className += " dragging";
-        setTimeout(() => {
-          this.className = "invisible";
-        }, 0);
+        // setTimeout(function () {
+        //   this.className = "invisible";
+        // }, 0);
       }
 
       function dragEnd() {
@@ -71,11 +72,14 @@
       }
 
       // 监听droppable的相关事件
-      for (const droppable of droppables) {
-        droppable.addEventListener("dragover", dragOver);
-        droppable.addEventListener("dragleave", dragLeave);
-        droppable.addEventListener("dragenter", dragEnter);
-        droppable.addEventListener("drop", dragDrop);
+      // 注意，事件註冊綁定的藥是具名函式
+      for (let i = 0; i < droppables.length; i++) {
+        // dragover事件會在將物件拖曳(移動)到置放目標的界限內時"持續"發生，類似mouseenter，dragover、dragenter事件建議都要加event.preventDefault()，自己再處理資料或事件
+        droppables[i].addEventListener("dragover", dragOver);
+        droppables[i].addEventListener("dragleave", dragLeave);
+        // dragenter事件會在將物件拖曳(移動)到置放目標的界限內時觸發，類似mousemove
+        droppables[i].addEventListener("dragenter", dragEnter);
+        droppables[i].addEventListener("drop", dragDrop);
       }
 
       function dragOver(e) {
@@ -92,8 +96,9 @@
       }
 
       function dragDrop(e) {
+        console.log(draggable);
         this.className = "droppable";
-        this.append(draggable);
+        this.appendChild(draggable);   
       }
     </script>
   </body>

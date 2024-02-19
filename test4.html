@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test4</title>
+    <style>
+      #draggable {
+        text-align: center;
+        background: white;
+      }
+
+      .dropzone {
+        width: 200px;
+        height: 20px;
+        background: blueviolet;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr id="draggable" draggable="true">
+          <td>这个 tr 可以拖动</td>
+        </tr>
+        <tr class="dropzone" id="droptarget">
+          <td>111</td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+      const source = document.getElementById("draggable");
+      const target = document.getElementById("droptarget");
+
+      source.addEventListener("dragstart", (event) => {
+        console.log("dragstart");
+        // 保存被拖动元素的引用
+        // dragged = event.target;
+      });
+
+      target.addEventListener("dragover", (event) => {
+        // 阻止默认行为以允许放置
+        event.preventDefault();
+        console.log("dragover");
+      });
+
+      target.addEventListener("drop", (event) => {
+        // 阻止默认行为（会作为某些元素的链接打开）
+        event.preventDefault();
+        console.log("drop");
+        // 将被拖动的元素移动到选定的放置目标
+        if (target.className === "dropzone") {
+          source.parentNode.appendChild(source);
+        }
+      });
+    </script>
+  </body>
+</html>
