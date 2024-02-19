@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test</title>
-    <style>
-      .one {
-        width: 150px;
-        aspect-ratio: 1/1;
-        background-color: red;
-        left: 100px;
-      }
-      .two {
-        width: 150px;
-        aspect-ratio: 1/1;
-        background-color: blue;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="one" id="test">
-      <p>1</p>
-    </div>
-    <div class="two" draggable="true">
-      <p>2</p>
-    </div>
-    <script>
-      const test = document.querySelector("#test");
-      test.addEventListener("mousedown", (e) => {
-        e.preventDefault();
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>test</title>
+        <style>
+            .one {
+                width: 150px;
+                aspect-ratio: 1/1;
+                background-color: red;
+                left: 100px;
+            }
+            .two {
+                width: 150px;
+                aspect-ratio: 1/1;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="one" id="test">
+            <p>1</p>
+        </div>
+        <div class="two" draggable="true">
+            <p>2</p>
+        </div>
+        <script>
+            const test = document.querySelector("#test");
+            test.addEventListener("mousedown", (e) => {
+                e.preventDefault();
 
-        // 按下去的時候的位置
-        let x = e.offsetX;
-        let y = e.offsetY;
-        console.log("offsetX", x);
-        console.log("offsetY", y);
+                // 按下去的時候的位置
+                let x = e.offsetX;
+                let y = e.offsetY;
+                console.log("offsetX", x);
+                console.log("offsetY", y);
 
-        // 這裡不用addEeventLinister是因為要removeEeventLinister時要用具名函式，但改用具名函式後mousemove只監聽的到一次，等於拖曳以後只會移動一次，試了很多次都沒辦法，只好改用on事件
-        document.querySelector("body").onmousemove = function (e1) {
-          e1.preventDefault();
-          console.log(e1.pageX);
-          let left = e1.pageX - x;
-          let top = e1.pageY - y;
+                // 這裡不用addEventLister是因為要removeEventLister時要用具名函式，但改用具名函式後mousemove只監聽的到一次，等於拖曳以後只會移動一次，試了很多次都沒辦法，只好改用on事件
+                document.querySelector("body").onmousemove = function (e1) {
+                    e1.preventDefault();
+                    console.log(e1.pageX);
+                    let left = e1.pageX - x;
+                    let top = e1.pageY - y;
 
-          test.style.marginLeft = left + "px";
-          test.style.marginTop = top + "px";
-        };
-      });
+                    test.style.marginLeft = left + "px";
+                    test.style.marginTop = top + "px";
+                };
+            });
 
-      test.addEventListener("mouseup", (e) => {
-        e.preventDefault();
-        console.log("mouseup");
-        document.querySelector("body").onmousemove = null;
-      });
-    </script>
-  </body>
+            test.addEventListener("mouseup", (e) => {
+                e.preventDefault();
+                console.log("mouseup");
+                document.querySelector("body").onmousemove = null;
+            });
+        </script>
+    </body>
 </html>
