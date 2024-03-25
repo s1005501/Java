@@ -1,8 +1,10 @@
 package chapter1.array;
 
-public class ArrayJava {
-    public static void main(String[] args) {
+import java.lang.reflect.Array;
 
+public class ArrayJava {
+
+    public static void main(String[] args) {
         // 在java裡可以去定義陣列裡的放的資料的型態
         // 使用方式是在型態後面加上中括號[]，值要用大括號{}包起來，{}內放陣列資料，值與值之間以逗號(,)隔開
         // 型態[] 變數名稱 = {值1, 值2, ...}
@@ -12,7 +14,7 @@ public class ArrayJava {
         System.out.println(friends[1]);
 
         // 陣列抓長度直接用length屬性就可以了，不用呼叫length() api
-        System.out.println(friends[friends.length - 1]);
+        System.out.println(friends.length);
 
         // 可以透過new 型態[陣列長度]的方式創造一個新的、空的陣列
         // 型態[] 變數名稱 = new 型態[陣列長度]
@@ -32,12 +34,12 @@ public class ArrayJava {
         System.out.println(friends);
 
         // Array的大小不能修改（如果要向Array中添加或刪減總元素數量，則必須創建一個新數組）
-        friends[4] = "Wilson";
+        // friends[4] = "Wilson";
 
         // Array裡可以再放Array進去，大概格式如下，要幾層Array就要加上對應得[]
         // 型態[][] 變數名稱 = new 型態[第一層Array能放的數量][第二層Array能放的數量]
         int[][] my2DArray = new int[4][3];
         my2DArray[2][1] = 10;
-
+        System.out.println(my2DArray[2][1]);
     }
 }

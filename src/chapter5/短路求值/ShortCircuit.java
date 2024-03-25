@@ -6,17 +6,17 @@ package chapter5.短路求值;
 // true && false // false
 // false && true // false
 
-// true || false // ture
+// true || false // true
 // false || true // true
 
 // java好像不會自動轉型別，求值的部分好像就沒那麼好用
-public class ShortCurcuit {
+public class ShortCircuit {
     public static void main(String[] args) {
-        int n1 = 10;
+        double n1 = 10.0;
         int n2 = 0;
         boolean b = false;
 
-        if (b && n1 / n2 != 3) {
+        if (b || n1 / n2 != 3) {
             System.out.println("false");
         }
     }

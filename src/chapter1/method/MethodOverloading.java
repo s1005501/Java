@@ -1,7 +1,7 @@
 package chapter1.method;
 
 // Method Overloading 方法多載
-// 在java裡我們透過mothod的簽名(signature)來辨識method，因此簽名具有唯一性，而簽名是由名稱(name)+參數(paramater type)所組成
+// 在java裡我們透過method的簽名(signature)來辨識method，因此簽名具有唯一性，而簽名是由名稱(name)+參數(parameter type)所組成
 // 而方法多載指的是在java裡我們可以使用具有相同名稱但參數不同的method(因為他們的簽名不同因此不會被認為是同一個method)
 public class MethodOverloading {
     public void MethodOverloading() {

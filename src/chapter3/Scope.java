@@ -19,7 +19,6 @@ public class Scope {
 
         // accessVariable是沒有辦法拿到j變數的值的，執行會報錯
         // System.out.println(j);
-
     }
 
     public static void main(String[] args) {

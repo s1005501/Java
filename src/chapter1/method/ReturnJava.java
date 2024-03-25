@@ -1,7 +1,7 @@
 package chapter1.method;
 
 // return value(返回值) 
-// return的功能是將method所指定的值回傳主程序並同時退出method，在退出methood後指示Java繼續執行主程序
+// return的功能是將method所指定的值回傳主程序並同時退出method，在退出method後指示Java繼續執行主程序
 // 返回值可以是void, 字串、整數、浮點數或參照(reference data type)
 
 public class ReturnJava {

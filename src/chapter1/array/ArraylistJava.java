@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class ArraylistJava {
+
     public static void main(String[] args) {
         // Arraylist是一個可調整大小的陣列，使用前要先將其從java.util.ArrayList匯入(import)
         // import java.util.ArrayList;
@@ -40,6 +41,5 @@ public class ArraylistJava {
 
         // clear()，將ArrayList裡的資料清空
         friends.clear();
-
     }
 }
