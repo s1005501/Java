@@ -7,7 +7,6 @@ public class Student extends People {
     public Student(String name, int age, String address, int grades) {
         super(name, age, address);
         this.grades = grades;
-
     }
 
     public void learn() {
@@ -30,7 +29,6 @@ public class Student extends People {
             People person = (People) p;
             System.out.println(person.getClass().getName());
             return this.age == person.age;
-
         }
         return false;
     }

@@ -6,7 +6,6 @@ public abstract class Animal {
 
     public Animal(String animalType) {
         this.animalType = animalType;
-
     }
 
     public void sleep() {

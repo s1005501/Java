@@ -3,7 +3,7 @@ package chapter3.polymorphism;
 import java.util.ArrayList;
 
 // 多型(polymorphism)
-// 多型的功能在於，如果我們在父類宣告了一個變數，那這個變數可以承接任何子類物件，常用在陣列(Array、ArrayList)、父類class實例化子類class等等的使用
+// 多型的功能在於，如果我們透過父類宣告了一個變數，那這個變數可以承接任何子類物件，常用在陣列(Array、ArrayList)、父類class實例化子類class等等的使用
 // 以陣列的使用來說就是，如果我們建立一個其值為People物件的陣列，那這個陣列的值不僅僅可以裝People，還可用來裝Teacher、Student
 public class Polymorphism {
     public static void main(String[] args) {

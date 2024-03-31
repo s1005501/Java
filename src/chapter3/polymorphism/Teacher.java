@@ -27,5 +27,4 @@ public class Teacher extends People {
         // printHello();
         // this.printHello();
     }
-
 }

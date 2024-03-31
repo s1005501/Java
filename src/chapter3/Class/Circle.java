@@ -26,8 +26,7 @@ public class Circle {
     // 注意裡面不能加任何的return type
     public Circle(double newRadius) {
         // System.out.println("Hello from circle.java");
-
-        radius = newRadius;
+        this.radius = newRadius;
     }
 
     // 物件的行為

@@ -17,9 +17,10 @@ public class Teacher extends People {
     // super主要有兩個功能
     // 第一是super()會去執行superclass裡的constructor，並把其參數帶入到父類的參數裡
     // 而當父類有寫預設的constructor時，則在子類不寫super()，其資料就會代父類的預設值(但在這個範例裡，我們要個別設定參數值，所以不會用到此特性)
+    // 只寫super()且不給參數的話同樣也是會套父類的預設值
     public Teacher(String name, int age, String address, String subject) {
         super(name, age, address);
-
+        // super();
         this.subject = subject;
     }
 
@@ -32,5 +33,4 @@ public class Teacher extends People {
         printHello();
         this.printHello();
     }
-
 }

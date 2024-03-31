@@ -28,7 +28,7 @@ public class Robot {
 
     public void setYearMade(int yearMade) {
         if (yearMade < 1990) {
-            System.out.println("YearMade cann't be earlier than 1990");
+            System.out.println("YearMade can't be earlier than 1990");
         } else if (yearMade > 2023) {
             System.out.println("YearMade not yet come");
         } else {

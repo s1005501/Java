@@ -7,6 +7,7 @@ public class Encapsulation {
     public static void main(String[] args) {
         // // 未封裝
         // Robot r = new Robot("Buzz Lightyear", 1995);
+        // System.out.println(r.name + " is made at " + r.yearMade);
         // r.yearMade = -500;
         // System.out.println(r.name + " is made at " + r.yearMade);
 

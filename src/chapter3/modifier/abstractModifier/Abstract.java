@@ -7,7 +7,7 @@ package chapter3.modifier.abstractModifier;
 // Abstract class可以作為一種data type，用來做Polymorphism
 public class Abstract {
     public static void main(String[] args) {
-        // Animal a = new Animal(); // 這樣會噴錯，因為avstract不能創建object
+        // Animal a = new Animal(); // 這樣會噴錯，因為abstract不能創建object
         Animal dog1 = new Dog();
         Dog dog2 = new Dog();
 

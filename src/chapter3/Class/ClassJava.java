@@ -22,7 +22,7 @@ public class ClassJava {
         System.out.println(c2.radius);
 
         Circle c3 = new Circle();
-        // System.out.println(c3.radius);
+        System.out.println(c3.radius);
         System.out.println(c3.getArea());
 
         // constructor也可以直接執行，透過new constructor()

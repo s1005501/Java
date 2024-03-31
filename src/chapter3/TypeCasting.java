@@ -3,8 +3,8 @@ package chapter3;
 // 型態轉換(Type Casting)
 // 在java裡，基本資料類型的轉換分為隱式轉換(Widening Casting)與強行轉換(Narrowing Casting)兩種
 // 型別大小
-// 小-------------------------------------------------->大
-// byte -> short -> char -> int -> long -> float -> double
+// 小--------------------------------------------->大
+// byte -> short -> int -> long -> float -> double
 
 // 隱士轉換(Widening Casting)
 // 較小的資料型別轉換成較大的資料型別(小轉大)，java會自動幫你做轉型，無風險
