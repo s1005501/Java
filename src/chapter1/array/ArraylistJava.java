@@ -41,5 +41,9 @@ public class ArraylistJava {
 
         // clear()，將ArrayList裡的資料清空
         friends.clear();
+
+        // 不同型態的ArrayList的寫法，一樣可以用，不知道加不加<>差在那，有可能是舊的寫法(因為公司的寫法是第一種)，建議還是按照上方正規的寫法比較好(?)
+        ArrayList arrListTypeOne = new ArrayList<>();
+        ArrayList arrListTypeTwo = new ArrayList();
     }
 }

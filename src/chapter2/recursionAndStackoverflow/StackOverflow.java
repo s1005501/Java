@@ -10,9 +10,9 @@ public class StackOverflow {
         if (i == 0) {
             return;
         }
-        System.out.println("開始pirntHi且i等於" + i);
+        System.out.println("開始printHi且i等於" + i);
         printHi(i - 1);
-        System.out.println("結束pirntHi且i等於" + i);
+        System.out.println("結束printHi且i等於" + i);
     }
 
     public static void main(String[] args) {

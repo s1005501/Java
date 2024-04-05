@@ -28,9 +28,10 @@ public class HashMapInterface {
 
         // isEmpty()，用來檢查Map是不是空的
         System.out.println(incomeMap.isEmpty()); // false
-
         System.out.println("-------------------------------------------");
+
         // 透過迴圈將Map裡的資料印出來的方式有兩種
+
         // 第一種，透過for迴圈，比較少用(因為實在太長)
         // for()裡的參數要用Map.Entry<key型態, value型態> entry(通常會叫這個名字) : 變數名稱.entrySet()
         // for(Map.entry<key型態, value型態> entry : map變數名稱.entrySet()){
@@ -38,10 +39,10 @@ public class HashMapInterface {
         // }
         for (Map.Entry<String, Integer> entry : incomeMap.entrySet()) {
             // 之後可以透過getKey()、getValue()取到key、value值
-            // 資料輸出的順序是由java決定得
             System.out.println(entry.getKey() + ", " + entry.getValue());
         }
         System.out.println("-------------------------------------------");
+
 
         // 第二種，透過forEach(實務上的用法)
         // 變數名稱.forEach((key,value)->{});

@@ -34,8 +34,8 @@ public class ExceptionHandling {
                 System.out.println("可以開車");
             }
         } catch (NumberFormatException e) {
-            // System.out.println("輸入的資料格式母丟喔!");
-            
+            System.out.println("輸入的資料格式母丟喔!");
+
             // 實務上常在catch裡用變數呼叫printStackTrace()來追蹤錯誤
             e.printStackTrace();
         }

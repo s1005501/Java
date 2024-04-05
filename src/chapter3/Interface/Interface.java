@@ -16,14 +16,14 @@ package chapter3.Interface;
 // 一個class可以implement多個Interface，但只能繼承一個class，使用方式是在被繼承的父類後面再加上implements interface名稱，interface以逗號隔開可以一值串下去
 // public 子類名稱 extends 父類名稱 implements interfaceA,interfaceB{}
 
-// 如果有個class implement了一個Interface ，那麼該class的所有object都是該Interface的一個object，舉例來說，A extends B implements C,D,E，那在A裡，可以這樣寫A(B,C,D,E) onject = new Object()
+// 如果有個class implement了一個Interface ，那麼該class的所有object都是該Interface的一個object，舉例來說，A extends B implements C,D,E，那在A裡，可以這樣寫A(B,C,D,E) object = new Object()
 
 // Interface不能包含constructor
 
 // 可以作為一種data type，用來做Polymorphism
 public class Interface {
     public static void main(String[] args) {
-        Edible chciken = new Chicken();
-        System.out.println(chciken.howToEat());
+        Edible chicken = new Chicken();
+        System.out.println(chicken.howToEat());
     }
 }

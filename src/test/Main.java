@@ -11,15 +11,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        // Main m = new Main();
-        // System.out.println(m.str);
-
-        HashMap testHashMap = new HashMap<>();
-
-        int style3 = 0;
-
-        testHashMap.put(style3, "test");
-
-        System.out.println(testHashMap.containsKey(0));
+        String str = "555";
+        System.out.println(str.split(""));
+        String[] test = str.split("");
+        for (String v : test) {
+            System.out.println(v);
+        }
     }
 }

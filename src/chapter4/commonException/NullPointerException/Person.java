@@ -11,17 +11,17 @@ public class Person {
         this.age = age;
     }
 
+    public void setSpouse(Person spouse) {
+        this.spouse = spouse;
+    }
+
+    // 透過判斷式濾掉發生NullPointerException的可能
     public void talk() {
         if (spouse != null) {
             System.out.println("你好~我叫" + name + "我的另一半是" + spouse.getName());
         } else {
             System.out.println("你好~我叫" + name + "我還沒結婚");
-
         }
-    }
-
-    public void setSpouse(Person spouse) {
-        this.spouse = spouse;
     }
 
     public String getName() {
