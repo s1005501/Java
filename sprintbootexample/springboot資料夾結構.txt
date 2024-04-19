@@ -1,0 +1,23 @@
+// 基本上專案檔案都會放在src
+|-- src
+    |-- main // 主程式資料夾
+        |-- java
+            |-- com
+			 	        |-- Group Id
+				  	        |-- Artifact Id
+					  	          |-- controller // MVC裡的控制層資料夾
+						            |-- dao // 資料庫實作層
+						            |-- entity // 資料配置設定層
+						            |-- model // 操作資料庫層
+                   	  	|-- DemoApplication.java // 專案啟動程式
+		    |-- resources
+			      |-- static // 靜態資料夾，用於存放css、js、images
+				        |-- css
+				        |-- js
+				        |-- images
+				        |-- ......
+		        |-- templates // 前端資料夾，用於存放前端頁面
+			      |-- application.properties // 專案的設定檔案(port...)
+	  |-- test // 測試資料夾
+|-- target 
+|-- pom.xml // Maven Dependencies設定檔案

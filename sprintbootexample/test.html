@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <button>按我</button>
+        <script>
+            document
+                .querySelector("button")
+                .addEventListener("click", async () => {
+                    console.log(1);
+                    const response = await axios(
+                        "https://randomuser.me/api/"
+                    ).then((response) => {
+                        console.log(2, response.data.info.seed);
+                    });
+                    console.log(3);
+                });
+        </script>
+    </body>
+</html>
