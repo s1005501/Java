@@ -1,4 +1,4 @@
-package com.sprintbootexample.sprintbootexample.controller;
+package com.springbootexample.springbootexample.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,21 +18,21 @@ public class Test {
     @GetMapping("/test")
     public List<Object> test() {
         // // XAMPP localhost DB
-        // List dataList = new ArrayList<>();
-        // StringBuffer sql = new StringBuffer();
-
-        // sql.append("SELECT * FROM student WHERE id = 1");
-        // dataList = jdbcTemplate.queryForList(sql.toString());
-
-        // return dataList;
-
-        // HIS test DB
         List dataList = new ArrayList<>();
         StringBuffer sql = new StringBuffer();
-        sql.append("SELECT * FROM ABSBMEDAPPSIZETBL WHERE ITEMNO = '01'");
+
+        sql.append("SELECT * FROM member WHERE 1");
         dataList = jdbcTemplate.queryForList(sql.toString());
 
         return dataList;
+
+        // HIS test DB
+        // List dataList = new ArrayList<>();
+        // StringBuffer sql = new StringBuffer();
+        // sql.append("SELECT * FROM ABSBMEDAPPSIZETBL WHERE ITEMNO = '01'");
+        // dataList = jdbcTemplate.queryForList(sql.toString());
+
+        // return dataList;
     }
 
 }

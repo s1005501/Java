@@ -13,12 +13,12 @@
 	</parent>
 
 	<!-- 專案package名稱(通常用公司名稱) -->
-	<groupId>com.sprintbootexample</groupId>
+	<groupId>com.springbootexample</groupId>
 
 	<!-- 專案package的識別名(通常用專案名稱) -->
-	<artifactId>sprintbootexample</artifactId>
+	<artifactId>springbootexample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sprintbootexample</name>
+	<name>springbootexample</name>
 	<description>Demo project for Spring Boot</description>
 
 	<!-- 專案其他參數設定, JDK版本 -->
@@ -66,11 +66,11 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.ibm.db2.jcc</groupId>
 			<artifactId>db2jcc4</artifactId>
 			<version>4.15.113</version>
-		</dependency>
+		</dependency> -->
 		
 	</dependencies>
 
