@@ -25,6 +25,7 @@ public class AppConfig {
 
 }
 
+// 大概格式
 // @Configuration
 // public class class名稱{
 // @Bean

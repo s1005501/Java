@@ -26,9 +26,9 @@ public class SpringbootexampleApplication {
 		// dispatcherServlet、beanNameViewResolver、characterEncodingFilter
 		String[] names = ioc.getBeanDefinitionNames();
 
-		for (String name : names) {
-			System.out.println(name);
-		}
+		// for (String name : names) {
+		// System.out.println(name);
+		// }
 	}
 }
 
