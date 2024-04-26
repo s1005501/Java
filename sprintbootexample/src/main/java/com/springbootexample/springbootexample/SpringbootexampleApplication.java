@@ -14,21 +14,23 @@ import lombok.Builder;
 
 // 第二種是透過@ComponentScan，一樣在後面再加上參數，其值給"com.Group Id的名稱"
 // @ComponentScan("com.springbootexample")
-
 @SpringBootApplication
 public class SpringbootexampleApplication {
 
 	public static void main(String[] args) {
-		// SpringApplication.run(SprintbootexampleApplication.class, args);
+		// SpringApplication.run(SpringbootexampleApplication.class, args);
 		var ioc = SpringApplication.run(SpringbootexampleApplication.class, args);
 
 		// getBeanDefinitionNames獲取ioc容器內所有物件的name
 		// dispatcherServlet、beanNameViewResolver、characterEncodingFilter
-		String[] names = ioc.getBeanDefinitionNames();
+		// String[] names = ioc.getBeanDefinitionNames();
 
 		// for (String name : names) {
 		// System.out.println(name);
 		// }
+
+		// 檢查Configuration裡的bean是不是相同的
+
 	}
 }
 

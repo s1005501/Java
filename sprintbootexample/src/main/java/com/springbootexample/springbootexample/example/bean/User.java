@@ -1,6 +1,7 @@
-package com.springbootexample.springbootexample.bean;
+package com.springbootexample.springbootexample.example.bean;
 
-public class Cat {
+
+public class User {
     private int id;
     private String name;
 

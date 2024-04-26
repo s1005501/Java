@@ -1,4 +1,4 @@
-package com.springbootexample.springbootexample.bean.componentExample;
+package com.springbootexample.springbootexample.example.bean.componentExample;
 
 import org.springframework.stereotype.Component;
 @Component

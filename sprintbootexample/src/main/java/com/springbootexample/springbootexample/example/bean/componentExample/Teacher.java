@@ -1,4 +1,4 @@
-package com.springbootexample.springbootexample.bean.componentExample;
+package com.springbootexample.springbootexample.example.bean.componentExample;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -33,7 +33,7 @@ public class Teacher {
     // 注意事項有二
     // 其一是，必須搭配@Autowired一起使用，單純只用@Qualifier的話是不會產生任何作用的
     // 其二是，其指定的是Bean的名字(透過@Component創建Bean時，其名字會是Class名的第一個字母轉成小寫)
-    @Qualifier("canonPrinter")
+    @Qualifier("hpPrinter")
     private Printer printer;
 
     @GetMapping("/print")
