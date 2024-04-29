@@ -1,15 +1,15 @@
-package com.springbootexample.springbootexample.controller;
+// package com.springbootexample.springbootexample.controller;
 
-import java.util.ArrayList;
+// import java.util.ArrayList;
 
-public class Store {
-    public ArrayList<String> products;
+// public class Store {
+//     public ArrayList<String> products;
 
-    public ArrayList<String> getProduct() {
-        return products;
-    }
+//     public ArrayList<String> getProduct() {
+//         return products;
+//     }
 
-    public void setProduct() {
-        this.products = products;
-    }
-}
+//     public void setProduct(ArrayList<String> products) {
+//         this.products = products;
+//     }
+// }

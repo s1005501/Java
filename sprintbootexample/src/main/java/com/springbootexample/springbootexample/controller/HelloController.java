@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import lombok.Getter;
+import lombok.Setter;
+
 // @ResponseBody
 // @Controller
 @RestController
@@ -21,13 +24,21 @@ public class HelloController {
         return hello;
     }
 
+    @Getter
+    @Setter
+    public class Store {
+        public ArrayList<String> products;
+    }
+
     @RequestMapping("/fruits")
     public void fruits() {
         Store store = new Store();
+        ArrayList<String> newList = new ArrayList<>();
+        newList.add("蘋果");
+        newList.add("橘子");
 
-        
-        
-
+        store.setProducts(newList);
+        System.out.println(store.products);
     }
 
 }
