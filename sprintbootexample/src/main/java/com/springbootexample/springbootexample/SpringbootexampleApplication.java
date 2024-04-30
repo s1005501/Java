@@ -18,8 +18,8 @@ import lombok.Builder;
 public class SpringbootexampleApplication {
 
 	public static void main(String[] args) {
-		// SpringApplication.run(SpringbootexampleApplication.class, args);
-		var ioc = SpringApplication.run(SpringbootexampleApplication.class, args);
+		SpringApplication.run(SpringbootexampleApplication.class, args);
+		// var ioc = SpringApplication.run(SpringbootexampleApplication.class, args);
 
 		// getBeanDefinitionNames獲取ioc容器內所有物件的name
 		// dispatcherServlet、beanNameViewResolver、characterEncodingFilter
