@@ -18,6 +18,6 @@
 				|-- ......
 			|-- templates // 前端資料夾，用於存放前端頁面
 			|-- application.properties // 專案的設定檔案(port...)
-	  |-- test // 測試資料夾
+	|-- test // 測試資料夾
 |-- target 
 |-- pom.xml // Maven Dependencies設定檔案

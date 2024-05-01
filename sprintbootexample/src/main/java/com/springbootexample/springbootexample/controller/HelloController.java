@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import jakarta.servlet.http.HttpServletMapping;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -52,17 +54,24 @@ public class HelloController {
     }
 
     // TODO: 這個怎麼試都失敗，回家用postman測試看看
-    @Getter
-    @Setter
-    public class Student {
+    // @Getter
+    // @Setter
+    public static class Student {
         public String id;
         public String name;
     }
 
     @PostMapping("/RequestBody")
-    public void test2(@RequestBody Object data) {
-        System.out.println(data);
+    public void test2(@RequestBody Student student) {
+        System.out.println(student.id);
+        // System.out.println(data);
     }
+
+    // 這種方式可以撈到資料
+    // @PostMapping("/RequestBody")
+    // public void test2(HttpServletRequest request) {
+    // System.out.println(request.getParameter("id"));
+    // }
 
     @GetMapping("/RequestHeader")
     public void test3(@RequestHeader String info) {
