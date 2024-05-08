@@ -53,9 +53,8 @@ public class HelloController {
         System.out.println("ID: " + id);
     }
 
-    // TODO: 這個怎麼試都失敗，回家用postman測試看看
-    // @Getter
-    // @Setter
+    @Getter
+    @Setter
     public static class Student {
         public String id;
         public String name;
@@ -64,10 +63,9 @@ public class HelloController {
     @PostMapping("/RequestBody")
     public void test2(@RequestBody Student student) {
         System.out.println(student.id);
-        // System.out.println(data);
     }
 
-    // 這種方式可以撈到資料
+    // 這種方式也可以撈到資料
     // @PostMapping("/RequestBody")
     // public void test2(HttpServletRequest request) {
     // System.out.println(request.getParameter("id"));

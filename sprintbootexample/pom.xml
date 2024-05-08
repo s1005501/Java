@@ -72,7 +72,7 @@
 			<artifactId>db2jcc4</artifactId>
 			<version>4.15.113</version>
 		</dependency> -->
-		
+
 	</dependencies>
 
 	<build>
