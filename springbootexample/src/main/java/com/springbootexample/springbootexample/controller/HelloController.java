@@ -2,12 +2,18 @@ package com.springbootexample.springbootexample.controller;
 
 import java.util.ArrayList;
 
+import org.apache.tomcat.util.http.parser.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
+
+import com.springbootexample.springbootexample.RESTful.Student;
 
 import jakarta.servlet.http.HttpServletMapping;
 import jakarta.servlet.http.HttpServletRequest;
@@ -37,6 +43,13 @@ public class HelloController {
         public ArrayList<String> products;
     }
 
+    @Getter
+    @Setter
+    public static class Student {
+        public String id;
+        public String name;
+    }
+
     @RequestMapping("/fruits")
     public void fruits() {
         Store store = new Store();
@@ -49,15 +62,15 @@ public class HelloController {
     }
 
     @GetMapping("/RequestParam")
-    public void test1(@RequestParam int id) {
+    public void test1(@RequestParam int id, String name) {
         System.out.println("ID: " + id);
+        System.out.println("Name: " + name);
     }
 
-    @Getter
-    @Setter
-    public static class Student {
-        public String id;
-        public String name;
+    @PostMapping("/multipart")
+    public void test5(@RequestParam int id, String name) {
+        System.out.println("ID: " + id);
+        System.out.println("Name: " + name);
     }
 
     @PostMapping("/RequestBody")
