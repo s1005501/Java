@@ -1,4 +1,4 @@
-package com.springbootexample.springbootexample.example.bean.componentExample;
+package com.springbootexample.springbootexample.example.bean.IOC;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

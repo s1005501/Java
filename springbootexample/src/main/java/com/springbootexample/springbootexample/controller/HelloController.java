@@ -76,6 +76,7 @@ public class HelloController {
     @PostMapping("/RequestBody")
     public void test2(@RequestBody Student student) {
         System.out.println(student.id);
+        System.out.println(student.name);
     }
 
     // 這種方式也可以撈到資料
