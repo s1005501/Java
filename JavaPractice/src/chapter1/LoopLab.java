@@ -12,6 +12,8 @@ public class LoopLab extends JPanel {
     int n;
 
     public LoopLab() {
+        type = JOptionPane.showInputDialog("你希望使用加法還是乘法表?(請輸入A或M)");
+        type = type.toLowerCase();
 
         if (type.equals("a") || type.equals("m")) {
             // 因為JOptionPane.showInputDialog回傳的資料會是String，因此要透過Integer.parseInt()將其先轉換成整數

@@ -25,7 +25,5 @@ public class Scope {
         Scope s = new Scope();
         s.setVariable();
         s.accessVariable();
-
     }
-
 }

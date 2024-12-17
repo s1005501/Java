@@ -6,7 +6,7 @@ public class FinalModifier {
     public static double radius = 1.0;
 
     public static void main(String[] args) {
-        PI = 6.28; // 會噴錯
+        // PI = 6.28; // 會噴錯
         radius = 2.0; // 一般變數就可以直接做修改
     }
 

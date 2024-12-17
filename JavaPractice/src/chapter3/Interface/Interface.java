@@ -7,7 +7,7 @@ package chapter3.Interface;
 // 特性
 // 內部所有的method"默認"都是abstract method，因此在定義時不需要特別寫"abstract"
 
-// 同樣不能創建object
+// 同樣不能實例化(創建object)
 
 // 子類繼承時要override"所有"的method(因為默認都是abstract method)
 

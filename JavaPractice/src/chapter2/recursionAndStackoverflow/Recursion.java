@@ -7,6 +7,7 @@ public class Recursion {
         if (i == 0) {
             return;
         }
+        
         System.out.println("hi");
         printHi(i - 1);
     }

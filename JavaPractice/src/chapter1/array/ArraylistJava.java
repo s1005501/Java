@@ -3,13 +3,13 @@ package chapter1.array;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class ArraylistJava {
+public class ArrayListJava {
 
     public static void main(String[] args) {
         // Arraylist是一個可調整大小的陣列，使用前要先將其從java.util.ArrayList匯入(import)
         // import java.util.ArrayList;
 
-        // 基本的java Arraylist
+        // 基本的java ArrayList
         // ArrayList<型態> 變數名稱 = new ArrayList<>();
         ArrayList<String> friends = new ArrayList<>();
 

@@ -1,7 +1,6 @@
 package chapter3.inheritance;
 
 public class Student extends People {
-
     private int grades;
 
     public Student(String name, int age, String address, int grades) {

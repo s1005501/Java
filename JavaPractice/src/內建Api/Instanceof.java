@@ -1,4 +1,4 @@
-package chapter3;
+package 內建Api;
 
 public class Instanceof {
     public String name;

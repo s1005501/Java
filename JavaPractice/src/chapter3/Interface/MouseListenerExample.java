@@ -7,12 +7,12 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 // 有使用到interface的java api
-// MouseLinster
-// 觸發滑鼠事件的interface，通常會搭配Swing使用
-// 基本用法跟KeyLinster一樣，差在其對應的是滑鼠事件，另外要override的method為mouseClicked、mousePressed、mouseReleased、mouseEntered、mouseExited，參數都是給MouseEvent e
-public class MouseLinster extends JPanel implements MouseListener {
 
-    public MouseLinster() {
+// MouseListener
+// 觸發滑鼠事件的interface，課程是搭配Swing使用
+// 基本用法跟KeyListener一樣，差在其對應的是滑鼠事件，另外要override的method為mouseClicked、mousePressed、mouseReleased、mouseEntered、mouseExited，參數都是給MouseEvent e
+public class MouseListenerExample extends JPanel implements MouseListener {
+    public MouseListenerExample() {
         addMouseListener(this);
     }
 
@@ -25,7 +25,7 @@ public class MouseLinster extends JPanel implements MouseListener {
         JFrame window = new JFrame();
         window.setSize(500, 500);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        window.setContentPane(new MouseLinster());
+        window.setContentPane(new MouseListenerExample());
         window.setVisible(true);
     }
 
@@ -39,21 +39,17 @@ public class MouseLinster extends JPanel implements MouseListener {
 
     @Override
     public void mousePressed(MouseEvent e) {
-
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-
     }
 }

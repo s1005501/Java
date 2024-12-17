@@ -27,6 +27,5 @@ public class ClassJava {
 
         // constructor也可以直接執行，透過new constructor()
         new Circle();
-
     }
 }

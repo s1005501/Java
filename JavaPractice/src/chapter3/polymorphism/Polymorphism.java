@@ -12,10 +12,7 @@ public class Polymorphism {
         People s2 = new Student("Hank", 99, "新北", 100);
 
         People t1 = new Teacher("Mike", 30, "台北", "電腦科學");
-
-        // 如果實例化時不使用父類而是使用子類時也可以裝進父類宣告的變數(因為父類可以承接所有的子類)
         Teacher t2 = new Teacher("Eric", 36, "桃園", "社會科學");
-     
 
         // 多型在陣列(Array、ArrayList)的實例
         // Array

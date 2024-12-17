@@ -1,8 +1,9 @@
-package java練習題;
+package java練習題.入門;
 
-// 4.編寫一個名為"reverseArray()”的函數，參數為一個array of Integers，return type為int[]，返回的值為將array of Integers全部反轉後的新array
+// 4.編寫一個名為"reverseArray()”的函數，參數為一個array of Integers，return type為int[]，返回的值為將array of Integers全部反轉後的新array。
+
 public class Four {
-    // 自己想到的解法
+    // 個人解法
     // 先將陣列的長度抓出來/2並無條件捨去小數點(如果長度是奇數最中間不用動，則交換次數也跟偶數相同)來判斷應該對調幾次
     // 透過迴圈去跑剛剛得到的應該對調幾次的次數，迴圈內容則是將陣列索引最開始(i)的跟最尾端(陣列長度先-1後在-i)的做交換
     public static int[] reverseArray(int[] arr) {
@@ -17,7 +18,6 @@ public class Four {
             temp = arr[i];
             arr[i] = arr[(arr.length - 1) - i];
             arr[(arr.length - 1) - i] = temp;
-
         }
 
         return arr;

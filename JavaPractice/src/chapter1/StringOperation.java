@@ -19,13 +19,9 @@ public class StringOperation {
 
         // indexOf()可以從字串中判斷是否有我們要找的資料，如果有以該資料的索引值顯示，()內的值就是我們要判斷的條件
         System.out.println(name.indexOf("v")); // 2
+
         // 如果要判斷的條件是字串，則以字串的第一個字元的索引值呈現
         System.out.println(name.indexOf("in")); // 3
-
-        // 字串轉換成數字
-        // Integer.parseInt()功能是把字串轉換成數字，()內的值放的是要被轉換的Sring
-        String age = "25";
-        System.out.println(Integer.parseInt(age)); // 25，這裡的25就不是字串而是數字了
     }
 
 }

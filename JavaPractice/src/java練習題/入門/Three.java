@@ -1,9 +1,9 @@
-package java練習題;
+package java練習題.入門;
+
+// 3.編寫一個名為"findMax()”的函數，參數為一個array of Integers，return type為int，返回的值為array當中所有元素當中，最大的那個。
 
 public class Three {
-    // 3.編寫一個名為"findMax()”的函數，參數為一個array of Integers，return
-    // type為int，返回的值為array當中所有元素當中，最大的那個。
-
+    // 個人解法
     public static int findMax(int[] arr) {
         // 宣告變數不賦值就做判斷式、迴圈會出現以下編譯錯誤
         // The local variable max may not have been initializedJava

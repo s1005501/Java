@@ -18,7 +18,7 @@ public class StringSplitAndSubstring {
         System.out.println(s2); // o
 
         // 兩個參數
-        // ()內給兩個參數，參數值是數字，第一個參數是要保留的字串起始值得索引，第二個參數是要排除的字串起始值得索引，也就是說如果(0,5)就是只保留索引0-4的資料
+        // ()內給兩個參數，參數值是數字，第一個參數是要保留的字串起始值索引，第二個參數是要排除的字串起始值索引，也就是說如果(0,4)就是只保留索引0-3的資料
         String s3 = "Hello";
         s3 = s3.substring(0, 4);
         System.out.println(s3); // Hell
