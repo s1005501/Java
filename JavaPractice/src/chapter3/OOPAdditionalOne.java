@@ -25,7 +25,7 @@ public class OOPAdditionalOne {
         A obj = new B();
 
         // obj可能是A物件、B物件、C物件
-        // objOne.hello(); // 會噴錯
+        // obj.hello(); // 會噴錯
 
         // 轉型就可以呼叫到子類的method
         ((B) obj).hello();

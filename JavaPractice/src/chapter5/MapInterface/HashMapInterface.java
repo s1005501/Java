@@ -6,6 +6,7 @@ import java.util.HashMap;
 // Map Interface
 // 可儲存鍵值對(key value pair)的資料
 // 一個Map裡不能有兩個相同的key
+// <>的型態必須為non-primitive data type
 // 常用的有HashMap、TreeMap兩種class
 
 // HashMap

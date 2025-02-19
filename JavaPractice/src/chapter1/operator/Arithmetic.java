@@ -30,9 +30,11 @@ public class Arithmetic {
         // 15+15=30=>30+"15"="3015"=>"3015"+15+15=>"30151515"
         System.out.println(15 + 15 + "15" + 15 + 15); // 30151515
 
-        // 判斷資料型態
-        // (要判斷的資料).getClass().getClass()可以判斷資料的型態
-        // 回傳的值前兩段是判斷資料的class類別，最後一段則是其資料型態
+        // getClass()，取得物件的類別
+        // getName()，取得物件的名稱
+        // 使用方式是要判斷的資料直接呼叫getClass()即可
+        // getName()是getClass()的method
+        System.out.println((5 + "10").getClass()); // class java.lang.String
         System.out.println((5 + "10").getClass().getName()); // java.lang.String
 
     }
